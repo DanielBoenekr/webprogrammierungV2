@@ -1,0 +1,5 @@
+[
+    { "day": "Mo, Mi, Do & So", "hours": "12:00 - 22:00 Uhr" },
+    { "day": "Fr & Sa", "hours": "12:00 - 00:00 Uhr" },
+    { "day": "Di", "hours": "Geschlossen" }
+  ]

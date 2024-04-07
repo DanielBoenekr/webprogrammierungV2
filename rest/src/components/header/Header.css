@@ -1,0 +1,87 @@
+.AllHeader{
+    position: -webkit-sticky; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: #222; 
+    height: 100px; 
+    
+}
+
+#logo {
+    width: 150px; 
+    height: auto; 
+}
+
+.NavigationBar {
+    height: 75px;
+    background-color: #444;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    padding-left: 0; /* Linken Innenabstand entfernen */
+}
+
+nav ul li {
+    margin-right: 50px; 
+    margin-left: 50px;
+    line-height: 2; 
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+nav ul li:first-child {
+    margin-left: 0; 
+}
+
+nav ul li a {
+    color: white;
+    font-size: x-large; 
+    text-decoration: none;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom 0.5s; 
+}
+
+nav ul li:hover a {
+    border-bottom: 2px solid rgba(147, 120, 0, 0.8);
+    transition: 0.5s;
+    color: rgba(147, 120, 0, 0.8); 
+}
+
+
+@media screen and (max-width: 768px) {
+    .Header {
+        align-items: flex-start; 
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+        text-align: center; 
+    }
+}

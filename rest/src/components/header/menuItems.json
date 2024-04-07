@@ -1,0 +1,6 @@
+[
+    { "id": 1, "label": "Über uns", "href": "../../" },
+    { "id": 2, "label": "Speisekarte", "href": "../menu" },
+    { "id": 3, "label": "Reservieren", "href": "../reservieren" },
+    { "id": 4, "label": "Kontakt", "href": "../kontakt" }
+]

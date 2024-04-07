@@ -1,0 +1,31 @@
+.Cookies-content {
+    position: relative; 
+    background-color: #3e3e3e;
+    min-height: 100vh;
+    }
+    
+
+  
+    .Cookies-content {
+      margin-top: 175px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      font-size: x-large;
+      font-family: 'Hanuman', sans-serif;
+      /* border-bottom: black 2px solid; */
+    }
+  
+    .Cookies-content  p{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: justify; 
+      padding-bottom: 20px;
+      padding-left: 20%;
+      padding-right: 20%;
+      font-size: medium;
+    }
+  

@@ -1,0 +1,29 @@
+.Impressum-content {
+    position: relative; 
+    background-color: #3e3e3e;
+    min-height: 100vh;
+    }
+    
+
+  
+    .Impressum-content {
+      margin-top: 175px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      font-size: x-large;
+      font-family: 'Hanuman', sans-serif;
+      /* border-bottom: black 2px solid; */
+    }
+  
+    .Impressum-content  a{
+      text-decoration: none;
+      color: white;
+      font-size: x-large;
+      font-style: italic;
+    }
+  
+    
+    
+    

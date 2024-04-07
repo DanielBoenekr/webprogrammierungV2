@@ -1,0 +1,144 @@
+.About-us-container {
+  position: relative; 
+  background-image: url('../../components/images/background6.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed;
+  z-index: 0;
+  min-height: 100vh;
+}
+
+/* Für den Hintergurnd (gedimmter effekt) */
+
+.About-us-container::before {
+  content: ""; 
+  position: absolute; /* Ändern Sie position zu absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1; 
+}
+
+/* Für die ganze Seite */
+
+.About-us-content {
+  margin-top: 175px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  color: white;
+  font-size: x-large;
+  font-family: 'Hanuman', sans-serif;
+}
+
+.AboutUsDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#welcome-headline{
+  margin-bottom: 5px;
+}
+
+#welcome-under-headline{
+  margin-bottom: 10px;
+}
+
+#AboutUsText {
+  margin-top: 50px;
+  margin-bottom: 90px;
+  
+}
+
+
+/* Stylen der Bilder und Slideshow */
+
+.slideshow{
+  background-color: black;
+  width: 80vh;
+  height: 50vh;
+  box-shadow: 0 0 10px 0 grey;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.slide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  background-color: green;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.slide-image{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.arrow{
+  position: absolute;
+  top: 0 ;
+  bottom: 0;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  color: rgba(255, 255, 255, 0.5);
+  user-select: none;
+  cursor: pointer;
+}
+
+.arrow:hover{
+  color: white;
+}
+
+.arrow-left{
+  left: 0;
+}
+
+.arrow-right{
+  right: 0;
+}
+
+/* Styling der Punkte oben im bild */
+
+.indicator-list{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin:0;
+  padding: 0;
+  
+}
+
+
+.indicator{
+  padding: 0 10px;
+  user-select: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: background-color 1.2s ease-in-out; 
+}
+
+.active{
+  opacity: 1;
+}
